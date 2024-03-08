@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+```
+const proxy = require('http-proxy-middleware')
+
+module.exports = function (app) {
+  app.use(proxy('/api', {
+    target: 'http://localhost:8777', //server url
+    changeOrigin: true,
+  }))
+}
+```
