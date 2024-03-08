@@ -1,0 +1,22 @@
+.signin-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  a {
+    text-decoration: underline;
+    color: #4a4a4a;
+    font-size: 1.2rem;
+  }
+  button {
+    color: #fff;
+    background-color: #101010;
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    img {
+      filter: invert(100%);
+    }
+  }
+}

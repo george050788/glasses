@@ -1,0 +1,64 @@
+.shopProductList {
+  display: flex;
+  gap: 4.5rem;
+  justify-content: flex-start;
+}
+
+.shopProductList .shopProducts {
+  max-width: 180px;
+  height: 230px;
+  border: 1px solid #e1e1e1;
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+}
+
+.shopProductList .shopProducts .image {
+  width: 100%;
+  height: 100px;
+  padding: 0 1.6rem;
+  background-color: #f6f6f6;
+}
+
+.shopProductList .shopProducts .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.shopProductList .shopProducts .details {
+  padding: 1.6rem;
+  text-align: center;
+}
+
+.shopProductList .shopProducts .details h2 {
+  max-width: 120px;
+  font-weight: bold;
+  font-size: 0.83em;
+  margin: auto;
+  height: 20px;
+}
+
+.shopProductList .shopProducts .details p {
+  line-height: 2.4rem;
+  font-style: italic;
+  margin-bottom: 1em;
+  color: #b6b6b6;
+  font-size: 1.2rem;
+}
+
+.shopProductList .shopProducts .details h4 {
+  font-weight: bold;
+  margin: 1.33em 0;
+  font-size: 1.6rem;
+}
+
+.shopProductList button {
+  font-size: 1.2rem;
+  padding: 1.2rem 1.6rem;
+  border: 1px solid #101010;
+  color: #fff;
+  line-height: 1.15;
+  background-color: #101010;
+  width: 100%;
+}

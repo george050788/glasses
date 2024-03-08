@@ -1,0 +1,89 @@
+.user-tab {
+  width: 700px;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  .tab-menu {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0 3.2rem;
+    a {
+      color: #818181;
+      padding: 1.6rem;
+      font-size: 1.5rem;
+      display: inline-block;
+
+      &.active {
+        color: #4a4a4a;
+        background-color: #fff;
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+  .user-content {
+    padding: 1.6rem;
+    height: 100%;
+    .user-profile {
+      display: flex;
+      margin: auto;
+      .profile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .profile-banner {
+          height: 150px;
+          position: relative;
+          width: 100%;
+          .banner-img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            position: relative;
+            left: 1.6rem;
+            bottom: 30%;
+            background-color: #e1e1e1;
+          }
+          button {
+            position: absolute;
+            right: 1.2rem;
+            bottom: -12%;
+            font-size: 1.2rem;
+            background-color: #101010;
+            border: 1px solid #101010;
+            padding: 1.2rem 1.6rem;
+            color: #fff;
+          }
+        }
+        .profile-details {
+          padding: 9.5rem 1.6rem 3.2rem;
+          h2 {
+            font-size: 1.5em;
+            margin: 0.83em 0;
+          }
+          span {
+            color: #4a4a4a;
+            font-size: 1.2rem;
+          }
+          h5 {
+            font-size: 0.83em;
+            margin: 1.67em 0;
+            color: #1a1a1a;
+          }
+        }
+      }
+    }
+  }
+}

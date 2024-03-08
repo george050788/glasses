@@ -1,0 +1,173 @@
+@font-face {
+  font-family: iconfont;
+  src: url(../../../images/iconfont.ttf) format('truetype');
+}
+
+.main {
+  .product-view {
+    width: 70%;
+    margin: 0 5rem;
+    h3 {
+      padding: 1.6rem;
+      margin: 1em 0;
+      font-size: 1.17em;
+      display: inline-block;
+    }
+    .product-model {
+      display: flex;
+      background-color: #fff;
+      border: 1px solid #e1e1e1;
+      .collection {
+        width: 150px;
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        overflow-y: scroll;
+        position: relative;
+        div {
+          height: 100px;
+          width: 100%;
+          border: 1px solid #e1e1e1;
+          margin-bottom: 5px;
+          img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .model-image {
+        width: 40rem;
+        background-color: #f8f8f8;
+        img {
+          object-fit: contain;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .model-details {
+        width: 500px;
+        padding: 3.2rem;
+        span {
+          color: #818181;
+          font-size: 1.2rem;
+        }
+        h1 {
+          font-size: 2em;
+          margin: 0.67em 0;
+          margin-top: 0;
+        }
+        p {
+          font-size: 1.2rem;
+          color: #4a4a4a;
+        }
+        .divider {
+          height: 1px;
+          background-color: #f1f1f1;
+          width: 100%;
+        }
+        .detail-center {
+          .selector {
+            position: relative;
+            display: flex;
+            align-items: center;
+            min-height: 38px;
+            justify-content: space-between;
+            border: 1px solid rgb(204, 204, 204);
+            border-radius: 4px;
+
+            .container {
+              display: flex;
+              padding: 2px 8px;
+              align-items: center;
+              position: relative;
+              width: 100%;
+              input {
+                color: rgb(128, 128, 128);
+                margin: 0 2px;
+                border: 0;
+                width: 100%;
+                // position: absolute;
+                // top: 50%;
+              }
+            }
+            .arrow-down {
+              width: 36px;
+              height: 36px;
+              display: flex;
+              align-items: center;
+              position: relative;
+              padding: 8px;
+              .vertical-divider {
+                margin: 8px 0;
+                background-color: rgb(204, 204, 204);
+                width: 1px;
+                height: 60%;
+                position: absolute;
+                left: 0;
+              }
+            }
+          }
+          .sizing {
+            display: flex;
+            border: 1px solid rgb(204, 204, 204);
+            border-radius: 4px;
+            padding: 2px 8px;
+            background-color: #fff;
+            flex-direction: column;
+            position: absolute;
+            width: 435px;
+            margin-top: 5px;
+            z-index: 99;
+
+            span {
+              color: #101010;
+              font-size: 1.17em;
+              padding: 8px;
+              &:hover {
+                background-color: rgb(38, 132, 255);
+                color: #fff;
+              }
+            }
+            &.active {
+              display: none;
+            }
+          }
+        }
+        .detail-bottom {
+          .color-choose {
+            margin-top: 1.5rem;
+            display: flex;
+            width: 100%;
+
+            .color {
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              margin: 0 10px;
+              position: relative;
+              &.active {
+                &::before {
+                  content: '\e60b';
+                  position: absolute;
+                  top: 2px;
+                  left: 3px;
+                  font-family: iconfont;
+                  font-size: 24px;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+        button {
+          padding: 1.2rem 1.6rem;
+          background-color: #101010;
+          position: relative;
+          border: 1px solid #101010;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

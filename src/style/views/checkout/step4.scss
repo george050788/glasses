@@ -1,0 +1,62 @@
+.step-4 {
+  width: 80rem;
+  margin: auto;
+  .step4-header {
+    display: flex;
+    margin-bottom: 3rem;
+    margin-top: 6rem;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 2rem;
+    }
+    img {
+      filter: invert(68%) sepia(82%) saturate(4761%) hue-rotate(126deg)
+        brightness(105%) contrast(99%);
+      margin-left: 1.2rem;
+    }
+  }
+  .order-details {
+    text-align: left;
+    h5 {
+      color: #4a4a4a;
+    }
+  }
+  .total {
+    text-align: right;
+    p {
+      font-size: 1.2rem;
+      color: #7d7d7d;
+      margin-bottom: 0.87rem;
+    }
+    h3 {
+      margin: 1.2rem 0;
+    }
+  }
+  .thank-msg {
+    text-align: center;
+    margin: 3rem 0;
+    h4 {
+      font-size: 1.6rem;
+      color: #7d7d7d;
+    }
+  }
+  .post-actions {
+    display: flex;
+    justify-content: space-between;
+    button {
+      padding: 1.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f2f2;
+      color: #7d7d7d;
+      border: 1px solid #e1e1e1;
+    }
+    .keeps-shopping {
+      background-color: #101010;
+      border: 1px solid #101010;
+      color: #fff;
+    }
+  }
+}

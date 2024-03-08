@@ -1,0 +1,159 @@
+.filter-display {
+  position: fixed;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 50px 20px;
+  z-index: 9999;
+  margin-right: -50%;
+  display: none;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  inset: 50% auto auto 50%;
+}
+
+.filter-display.active {
+  display: block;
+}
+
+.filter-display .container {
+  width: 400px;
+  height: 360px;
+  padding: 1.6rem;
+  position: relative;
+}
+
+.filter-display .container .filters {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-display .container .filters .filters-field {
+  width: 100%;
+  margin-bottom: 1.6rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.filter-display .container .filters .filters-field:first-child {
+  flex-basis: 50%;
+}
+
+.filter-display .container .filters .filters-field:nth-child(2) {
+  flex-basis: 50%;
+}
+
+.filter-display .container .filters .filters-field span {
+  color: #4a4a4a;
+  font-size: 1.2rem;
+}
+
+.filter-display .container .filters .filters-field select {
+  width: 100%;
+  font-size: 1.2rem;
+  color: #4a4a4a;
+  padding: 7px 1.4rem;
+  border: 1px solid #e1e1e1;
+}
+
+.filter-display .container .filters .filters-field .box {
+  height: 120px;
+  width: 100%;
+}
+
+.filter-display .container .filters .filters-field .box .control {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.filter-display .container .filters .filters-field .box .control input {
+  width: 50%;
+  border: none;
+  font-size: 4rem;
+  padding: 0;
+  text-align: center;
+}
+
+.filter-display .container .filters .filters-field .box .slider {
+  position: relative;
+  width: 100%;
+}
+
+.filter-display .container .filters .filters-field .box .slider .tooltip {
+  margin-left: -11px;
+  margin-top: -35px;
+  border-radius: 7px;
+  background-color: #d0d0d0;
+}
+
+.filter-display .container .filters .filters-field .box .slider .tooltip span {
+  color: #fff;
+}
+
+.filter-display .container .filters .filters-field .box .slider .handle {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  border: 0px;
+  left: 0%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  background-color: #1a1a1a;
+  cursor: pointer;
+}
+
+.filter-display .container .filters .filters-field .box .slider .handle.right {
+  left: 100%;
+}
+
+.filter-display .container .filters .filters-field .box .slider .tracks {
+  background-color: orange;
+  border-radius: 7px;
+  height: 14px;
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  z-index: 1;
+  transform: translate(0%, -50%);
+}
+
+.filter-display .container .filters .filters-field .box .slider .ticks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-display .container .filters .filters-field .box .slider .ticks .line {
+  margin-top: 17px;
+  width: 1px;
+  height: 5px;
+  background-color: #c8c8c8;
+}
+
+.filter-display .container .filters .filters-field .box .slider .ticks .value {
+  margin-top: 25px;
+  font-size: 10px;
+  text-align: center;
+  width: 16.6667%;
+  margin-left: -8.33333%;
+}
+
+.filter-display .container .filters .filters-action {
+  display: flex;
+  width: 100%;
+}
+
+.filter-display .container .filters .filters-action button {
+  flex-grow: 1;
+  font-size: 1.2rem;
+  padding: 1.2rem 1.6rem;
+  background-color: #101010;
+  border: 1px solid #101010;
+  color: #fff;
+}
+
+.filter-display .container .filters .filters-action button:last-child {
+  color: #101010;
+  background-color: #fff;
+}

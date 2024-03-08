@@ -1,0 +1,132 @@
+.auth-container {
+  width: 80rem;
+  margin: auto;
+  .auth-content {
+    border: 1px solid #c5c5c5;
+    padding: 1.6rem 3.2rem 3.2rem;
+    display: flex;
+    justify-content: center;
+    .auth-left {
+      width: 100%;
+      h3 {
+        font-size: 1.17em;
+        font-weight: bold;
+        margin: 1em 0;
+      }
+      form {
+        label {
+          padding: 1rem 1.2rem;
+          color: #696868;
+          font-size: 1.2rem;
+          display: inline-block;
+        }
+        input {
+          padding: 10px 1.6rem;
+          font-size: 1.5rem;
+          width: 100%;
+        }
+        .signup-button {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 2rem;
+          button {
+            color: #fff;
+            background-color: #101010;
+            padding: 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            img {
+              filter: invert(100%);
+            }
+          }
+        }
+      }
+    }
+    .auth-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 4.8rem;
+      position: relative;
+      flex-direction: column;
+
+      .vertical-line {
+        width: 1px;
+        background-color: #e1e1e1;
+        height: 30%;
+      }
+      h6 {
+        padding: 1.2rem;
+      }
+    }
+    .auth-right {
+      width: 51rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      button {
+        margin-bottom: 1.2rem;
+        font-size: 1.4rem;
+        width: 100%;
+        padding: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        img {
+          position: absolute;
+          left: 1.6rem;
+          width: 1em;
+          height: 1em;
+        }
+      }
+      .facebook {
+        background-color: #0078ff;
+        color: #fff;
+        border: 1px solid #0078ff;
+        img {
+          left: 1.2rem;
+          width: 1.8em;
+          height: 1.8em;
+        }
+      }
+      .google {
+        background-color: #fff;
+        color: #3a3a3a;
+        border: 1px solid #c5c5c5;
+      }
+      .github {
+        background-color: #24292e;
+        color: #fff;
+        border: 1px solid #24292e;
+        img {
+          filter: invert(100%);
+        }
+      }
+    }
+  }
+  .auth-bottom {
+    width: 100%;
+    display: flex;
+    padding: 1.2rem;
+    background-color: #f2f2f2;
+    border: 1px solid #c5c5c5;
+    border-top: none;
+    justify-content: center;
+    align-items: center;
+    span {
+      margin-right: 3.2rem;
+      font-size: 1.2rem;
+      color: #4a4a4a;
+    }
+    .button {
+      font-size: 1.2rem;
+      padding: 1.2rem 1.6rem;
+      color: #4a4a4a;
+      border: 1px solid #e1e1e1;
+    }
+  }
+}

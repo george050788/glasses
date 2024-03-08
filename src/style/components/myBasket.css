@@ -1,0 +1,186 @@
+.basket {
+  width: 60rem;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  transform: translateX(0);
+  z-index: 999;
+}
+
+.basket.show {
+  transform: translateX(60rem);
+}
+
+.basket .basket-list {
+  padding: 1.6rem;
+  padding-bottom: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.basket .basket-list .mybasket-header {
+  display: flex;
+  align-items: center;
+}
+
+.basket .basket-list .mybasket-header h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+  flex-grow: 1;
+}
+
+.basket .basket-list .mybasket-header h3 span {
+  color: #4a4a4a;
+  font-size: 1.2rem;
+}
+
+.basket .basket-list .mybasket-header button {
+  padding: 1.2rem 1.6rem;
+  font-size: 1.2rem;
+  border: 1px solid #e1e1e1;
+  color: #4a4a4a;
+  background-color: #fff;
+}
+
+.basket .basket-list .item-display .basket-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.basket .basket-list .item-display .basket-empty .empty {
+  color: #818181;
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+.basket .basket-list .item-display .items {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 1.2rem;
+}
+
+.basket .basket-list .item-display .items .controller {
+  width: 30px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.basket .basket-list .item-display .items .controller button {
+  padding: 5px;
+  font-size: 1.2rem;
+  border: 1px solid #e1e1e1;
+  color: #4a4a4a;
+  background-color: #fff;
+  width: 35px;
+  height: 100%;
+}
+
+.basket .basket-list .item-display .items .basket-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1.2rem;
+}
+
+.basket .basket-list .item-display .items .basket-item .basket-img {
+  width: 90px;
+  height: 90px;
+  margin-right: 1.6rem;
+  position: relative;
+}
+
+.basket .basket-list .item-display .items .basket-item .basket-detail {
+  width: 275px;
+}
+
+.basket .basket-list .item-display .items .basket-item .basket-detail h4 {
+  margin: 1.2rem 0;
+  width: 142px;
+  text-overflow: ellipsis;
+  text-decoration: underline;
+  height: 18.4px;
+}
+
+.basket .basket-list .item-display .items .basket-item .basket-detail .item-specs {
+  display: flex;
+  gap: 3.5em;
+}
+
+.basket .basket-list .item-display .items .basket-item .basket-detail .item-specs span {
+  font-size: 12px;
+  color: #8d8d8d;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.basket .basket-list .item-display .items .basket-item .basket-detail .item-specs h5 {
+  font-size: 0.83em;
+}
+
+.basket .basket-list .item-display .items .basket-item .basket-detail .item-specs .color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.basket .basket-list .item-display .items .basket-item .item-price {
+  margin-right: 2rem;
+}
+
+.basket .basket-list .item-display .items .basket-item button {
+  padding: 1.2rem 1.6rem;
+  font-size: 1.2rem;
+  border: 1px solid #e1e1e1;
+  color: #4a4a4a;
+  background-color: #fff;
+}
+
+.basket .total {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.basket .total::before {
+  content: '';
+  position: absolute;
+  width: 93%;
+  height: 0.5px;
+  background-color: #e1e1e1;
+  top: 0;
+}
+
+.basket .total h6 {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+  line-height: 2.4rem;
+}
+
+.basket .total h3 {
+  font-size: 1.5em;
+  margin: 1.2rem 0;
+}
+
+.basket .total button {
+  font-size: 1.5rem;
+  padding: 1.6rem 3.2rem;
+  margin: auto 0;
+  background-color: #101010;
+  color: #fff;
+  line-height: 1.15;
+  display: block;
+}

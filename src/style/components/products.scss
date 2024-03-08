@@ -1,0 +1,34 @@
+.productlist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  .products {
+    max-height: 30rem;
+    border: 1px solid #e1e1e1;
+    .image {
+      width: 100%;
+      height: 20rem;
+      background-color: #f1f1f1;
+      img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        &:hover {
+          transform: scale(1.1);
+          transition: all 0.5s;
+        }
+      }
+    }
+    .details {
+      padding: 2rem;
+      h2 {
+        font-size: 1.5em;
+      }
+      p {
+        line-height: 2.4rem;
+        color: #818181;
+        font-style: italic;
+      }
+    }
+  }
+}
