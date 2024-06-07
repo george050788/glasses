@@ -54,7 +54,8 @@ export default function Step3 () {
     window.paypal.Buttons({
       async createOrder () {
         try {
-          const response = await fetch("/api/orders", {
+          const render = 'https://glasses-lild.onrender.com'
+          const response = await fetch(`${render}/api/orders`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

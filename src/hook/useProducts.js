@@ -37,7 +37,9 @@ export default function useProducts () {
   // }
 
   const getData = () => {
-    axios.get(`http://localhost:8080/product/products`)
+
+    const render = 'https://glasses-lild.onrender.com'
+    axios.get(`${render}/product/products`)
       .then(res => {
         console.log('res', res)
         // c onst persons = res.data
